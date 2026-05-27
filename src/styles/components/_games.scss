@@ -1,0 +1,107 @@
+.game__main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.games__appbar {
+    align-items: center;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 10px 20px;
+    background-color: $morado;
+}
+
+.games__content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px;
+}
+
+.game__title-input,
+.game__notas {
+    border: none;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.game__title-input {
+    color: blue;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.game__notas {
+    border: 1px solid black;
+    color: black;
+    font-size: 20px;
+    flex: 1 1 auto;
+    resize: none;
+}
+
+.game__new-img {
+    height: 180px;
+}
+
+/* juego 1*/
+.game-container {
+    width: 100%;
+    height: 100vh;
+    background: $verde;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.enemy {
+    width: 80px;
+    height: 80px;
+    background: crimson;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.enemy:hover {
+    transform: scale(1.1);
+}
+
+/*juego sumas matematicas*/
+
+.boton__inglesa {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.Game__inglesinput {
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+.game-containera {
+    width: 100%;
+    min-height: 60vh;
+    background: $morado;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}

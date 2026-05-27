@@ -1,0 +1,56 @@
+.english-grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.game-card {
+    width: 32%;
+    min-width: 300px;
+    min-height: 350px;
+    background: $morado;
+    border-radius: 20px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+}
+
+.game-card h1 {
+    font-size: 40px;
+}
+
+.game-card input {
+    width: 80%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+}
+
+.game-card button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+@media (max-width: 900px) {
+
+    .game-card {
+        width: 90%;
+    }
+}

@@ -1,0 +1,472 @@
+/* EduPlayDashboard.scss */
+.eduplay-dashboard {
+    min-height: 100vh;
+    background: #f5f6fa;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+
+    .dashboard-container {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .dashboard-header {
+        margin-bottom: 35px;
+
+        h1 {
+            font-size: 42px;
+            color: #1f2937;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #6b7280;
+            font-size: 16px;
+        }
+    }
+
+    .top-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 24px;
+        margin-bottom: 35px;
+    }
+
+    .dashboard-card,
+    .progress-card,
+    .achievement-card {
+        background: white;
+        border-radius: 28px;
+        padding: 28px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        transition: 0.3s ease;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+
+    .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 25px;
+
+        h2 {
+            font-size: 24px;
+            color: #1f2937;
+        }
+
+        .icon {
+            font-size: 36px;
+        }
+    }
+
+    .card-body {
+        h3 {
+            font-size: 42px;
+            color: #4f46e5;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #6b7280;
+            font-size: 16px;
+        }
+    }
+
+    .center-content {
+        text-align: center;
+    }
+
+    .green {
+        color: #16a34a !important;
+    }
+
+    .orange {
+        color: #f97316 !important;
+    }
+
+    .yellow {
+        color: #eab308 !important;
+    }
+
+    .progress-section {
+        margin-top: 20px;
+
+        span {
+            display: block;
+            margin-top: 10px;
+            color: #6b7280;
+            font-size: 14px;
+        }
+    }
+
+    .progress-bar {
+        width: 100%;
+        height: 14px;
+        background: #e5e7eb;
+        border-radius: 999px;
+        overflow: hidden;
+    }
+
+    .progress-fill {
+        width: 70%;
+        height: 100%;
+        background: #22c55e;
+        border-radius: 999px;
+    }
+
+    .blue {
+        width: 80%;
+        background: #3b82f6;
+    }
+
+    .green-fill {
+        width: 65%;
+        background: #22c55e;
+    }
+
+    .purple {
+        width: 45%;
+        background: #a855f7;
+    }
+
+    .message-box {
+        background: #fff7ed;
+        padding: 18px;
+        border-radius: 18px;
+        margin-top: 20px;
+
+        p {
+            color: #6b7280;
+            font-style: italic;
+            line-height: 1.5;
+        }
+    }
+
+    .store-button {
+        width: 100%;
+        margin-top: 20px;
+        padding: 14px;
+        border: none;
+        border-radius: 18px;
+        background: #facc15;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s ease;
+
+        &:hover {
+            background: #eab308;
+        }
+    }
+
+    .bottom-section {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        gap: 24px;
+    }
+
+    .subject-progress {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .subject {
+        .subject-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            color: #374151;
+            font-weight: 600;
+        }
+    }
+
+    .achievement-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .achievement-header {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        margin-bottom: 24px;
+
+        .medal {
+            width: 70px;
+            height: 70px;
+            background: #fef9c3;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 34px;
+        }
+
+        h2 {
+            color: #1f2937;
+            margin-bottom: 5px;
+        }
+
+        h4 {
+            color: #6b7280;
+            font-weight: 500;
+        }
+    }
+
+    .achievement-description {
+        background: #f3f4f6;
+        padding: 22px;
+        border-radius: 20px;
+
+        p {
+            color: #4b5563;
+            line-height: 1.7;
+        }
+    }
+
+    .xp-earned {
+        align-self: flex-end;
+        margin-top: 30px;
+        background: #dcfce7;
+        color: #15803d;
+        padding: 14px 22px;
+        border-radius: 18px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    @media (max-width: 992px) {
+        .bottom-section {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media (max-width: 768px) {
+        padding: 20px;
+
+        .dashboard-header h1 {
+            font-size: 32px;
+        }
+
+        .card-body h3 {
+            font-size: 32px;
+        }
+    }
+}
+
+/* EduPlayDashboard2.scss */
+.eduplay-dashboard2 {
+    min-height: 100vh;
+    background: #f5f6fa;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+
+    .dashboard2-container {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .games-header,
+    .challenge-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 25px;
+
+        h1 {
+            font-size: 34px;
+            color: #1f2937;
+        }
+
+        button {
+            padding: 12px 22px;
+            border: none;
+            border-radius: 14px;
+            background: #4f46e5;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s ease;
+
+            &:hover {
+                background: #4338ca;
+            }
+        }
+    }
+
+    .games-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 24px;
+        margin-bottom: 40px;
+    }
+
+    .game-card {
+        border-radius: 28px;
+        overflow: hidden;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        transition: 0.3s ease;
+        background: white;
+
+        &:hover {
+            transform: translateY(-6px);
+        }
+
+        .game-image {
+            height: 220px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .game-content {
+            padding: 24px;
+
+            h2 {
+                font-size: 26px;
+                margin-bottom: 10px;
+                color: white;
+            }
+
+            p {
+                color: rgba(255, 255, 255, 0.9);
+                margin-bottom: 20px;
+            }
+
+            button {
+                width: 100%;
+                padding: 14px;
+                border: none;
+                border-radius: 18px;
+                background: white;
+                font-weight: bold;
+                cursor: pointer;
+                transition: 0.3s ease;
+
+                &:hover {
+                    transform: scale(1.03);
+                }
+            }
+        }
+    }
+
+    .purple {
+        background: linear-gradient(135deg, #7c3aed, #5b21b6);
+    }
+
+    .blue {
+        background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    }
+
+    .green {
+        background: linear-gradient(135deg, #22c55e, #15803d);
+    }
+
+    .yellow {
+        background: linear-gradient(135deg, #facc15, #eab308);
+    }
+
+    .daily-challenges {
+        margin-top: 20px;
+    }
+
+    .challenge-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 24px;
+    }
+
+    .challenge-card {
+        background: white;
+        border-radius: 26px;
+        padding: 28px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        transition: 0.3s ease;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+
+        .challenge-top {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            margin-bottom: 25px;
+
+            .challenge-icon {
+                width: 70px;
+                height: 70px;
+                border-radius: 20px;
+                background: #f3f4f6;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 34px;
+            }
+
+            h3 {
+                color: #1f2937;
+                line-height: 1.4;
+            }
+        }
+
+        .challenge-progress {
+            span {
+                display: block;
+                margin-top: 10px;
+                color: #6b7280;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .progress-bar {
+        width: 100%;
+        height: 14px;
+        background: #e5e7eb;
+        border-radius: 999px;
+        overflow: hidden;
+    }
+
+    .progress-fill {
+        height: 100%;
+        border-radius: 999px;
+    }
+
+    .red {
+        background: #ef4444;
+    }
+
+    .blue {
+        background: #3b82f6;
+    }
+
+    .yellow {
+        background: #eab308;
+    }
+
+    @media (max-width: 768px) {
+        padding: 20px;
+
+        .games-header,
+        .challenge-header {
+            flex-direction: column;
+            gap: 15px;
+            align-items: flex-start;
+        }
+
+        .games-header h1,
+        .challenge-header h1 {
+            font-size: 28px;
+        }
+    }
+}

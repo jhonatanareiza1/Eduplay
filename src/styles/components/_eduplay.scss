@@ -1,0 +1,86 @@
+.eduplay__main-content {
+    display: flex;
+
+}
+
+.eduplay__sidebar {
+    background-color: $bluedark;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px;
+    width: 450pX;
+}
+
+.eduplay__sidebar-navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.eduplay__sidebar-navbar h3 {}
+
+.eduplay__new-entry {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+
+    transition: color .3 ease;
+
+    &:hover {
+        color: $amarillo;
+    }
+}
+
+.eduplay__entries {
+    flex: 1 1 auto;
+    margin-top: 30px;
+    overflow-x: scroll;
+}
+
+.eduplay__nentry {
+    background-color: white;
+    border-radius: 4px;
+    color: $bluedark;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    overflow: hidden;
+
+}
+
+.eduplay__entry-img {
+    height: 75px;
+    width: 75px;
+}
+
+.eduplay___entry-body {
+    padding: 10px;
+}
+
+.eduplay__entry-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.eduplay__entry-content {
+    font-size: 10px;
+}
+
+.eduplay__fecha-box {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+}
+
+.eduplay__fecha-box span {
+    font-size: 12;
+}
