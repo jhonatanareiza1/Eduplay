@@ -24,11 +24,11 @@
     border-radius: 2px;
 
     &:disabled {
-        background-color: lighten($color: $morado, $amount: 15);
+        background-color: magenta;
     }
 
     &:hover {
-        background-color: darken($color: $morado, $amount: 20);
+        background-color: mediumvioletred;
     }
 }
 

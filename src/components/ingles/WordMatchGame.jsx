@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import ai from "../../api/gemini";
+import ai from "../../api/Gemini";
 
 const WordMatchGame = () => {
   const [words, setWords] = useState([]);
