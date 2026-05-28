@@ -72,7 +72,8 @@ export function EduPlayDashboard2() {
         {/* HEADER */}
         <div className="games-header">
           <h1>Juegos recomendados</h1>
-          <button>Ver todos</button>
+
+          <button onClick={() => navigate("/dashboard")}>Ver todos</button>
         </div>
 
         {/* GAMES */}
@@ -85,9 +86,11 @@ export function EduPlayDashboard2() {
 
               <div className="game-content">
                 <h2>{game.title}</h2>
+
                 <p>{game.level}</p>
 
-                <button onClick={() => navigate(game.Liste)}>
+                {/* BOTON */}
+                <button onClick={() => navigate(game.route)}>
                   {game.button}
                 </button>
               </div>
